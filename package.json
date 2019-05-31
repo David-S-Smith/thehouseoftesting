@@ -7,6 +7,7 @@
         "dev": "nodemon index.js"
     },
     "dependencies": {
+        "bot.js": "0.0.1",
         "discord.js": "^11.4.2",
         "dotenv": "^8.0.0"
     },
