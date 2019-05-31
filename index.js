@@ -8,10 +8,10 @@ const client = new Discord.Client();
  //read all from events
 fs.readdir('./events/', (err, files) => {
     files.forEach(file => {
-        const eventHandler = require(`./events/${file}`)
-        const eventName = file.split('.')[0]
-        client.on(eventName, (...args) => eventHandler(client, ...args))
-})
+        const eventHandler = require(`./events/${file}`);
+        const eventName = file.split('.')[0];
+        client.on(eventName, (...args) => eventHandler(client, ...args));
+    })
 })
 
 
